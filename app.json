@@ -1,42 +1,87 @@
 {
   "expo": {
-    "name": "nayra-app",
+    "name": "Nayra",
     "slug": "nayra-app",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "nayra",
+    "userInterfaceStyle": "light",
     "icon": "./assets/images/icon.png",
-    "scheme": "nayraapp",
-    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#F4EEE4",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "com.nayraphoto.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "associatedDomains": [
+        "applinks:app.nayraphoto.com"
+      ]
     },
     "android": {
+      "package": "com.nayraphoto.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0F3D33",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.READ_MEDIA_IMAGES"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "app.nayraphoto.com",
+              "pathPrefix": "/a"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
     },
     "plugins": [
       "expo-router",
+      "expo-secure-store",
+      "expo-localization",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F4EEE4",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 140
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Manrope-Regular.ttf",
+            "./assets/fonts/Manrope-SemiBold.ttf",
+            "./assets/fonts/Manrope-Bold.ttf",
+            "./assets/fonts/Newsreader-Regular.ttf",
+            "./assets/fonts/Newsreader-SemiBold.ttf"
+          ]
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f71be424-7b58-4946-9a5b-139f6f826255"
+      },
+      "router": {}
+    },
+    "owner": "jcamposv"
   }
 }

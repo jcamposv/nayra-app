@@ -1,0 +1,105 @@
+{
+  "access": {
+    "title": "Digite seu código",
+    "hint": "Seu fotógrafo te deu um código de 10 caracteres para abrir sua galeria.",
+    "placeholder": "XXXXX-XXXXX",
+    "submit": "Abrir minha galeria",
+    "opening": "Abrindo…",
+    "invalid": "Esse código não é válido. Confira e tente de novo.",
+    "unavailable": "Esta galeria não está mais disponível. Peça um código novo ao seu fotógrafo.",
+    "tooManyAttempts": "Muitas tentativas. Espere alguns minutos e tente de novo.",
+    "label": "Código de acesso",
+    "noCode": "Não tem um código? Peça ao seu fotógrafo."
+  },
+  "session": {
+    "expired": "Seu acesso expirou. Digite seu código novamente.",
+    "exit": "Sair da galeria"
+  },
+  "protection": {
+    "unsupportedTitle": "Este aparelho não consegue proteger as fotos",
+    "unsupported": "Para cuidar do trabalho do seu fotógrafo, a galeria só abre em aparelhos onde conseguimos bloquear as capturas de tela.",
+    "screenshotBlocked": "As fotos estão protegidas: não é possível capturá-las.",
+    "downloadHint": "Suas fotos abrirão fora do app para você poder salvá-las."
+  },
+  "gallery": {
+    "by": "Galeria de {{studio}}",
+    "instructions": "Toque no coração para marcar suas favoritas.",
+    "counterIncluded": "Você escolheu {{count}} de {{limit}} incluídas",
+    "counterUnlimited": "Você escolheu {{count}}",
+    "counterExtras": "{{count}} adicionais · {{price}} cada",
+    "limitReached": "Você atingiu as {{limit}} fotos incluídas no seu pacote.",
+    "select": "Marcar favorita",
+    "unselect": "Remover favorita",
+    "submit": "Enviar seleção",
+    "cancel": "Continuar escolhendo",
+    "confirmTitle": "Enviar sua seleção?",
+    "confirmDescription": "Você enviará {{count}} fotos ao seu fotógrafo. Depois não poderá mudá-las.",
+    "confirmDescriptionExtras": "Você enviará {{count}} fotos ({{extras}} adicionais a {{price}} cada). Depois não poderá mudá-las.",
+    "submitted": "Pronto! Sua seleção foi enviada.",
+    "submittedHint": "Seu fotógrafo a recebeu e entrará em contato para a entrega.",
+    "submitEmpty": "Escolha pelo menos uma foto antes de enviar.",
+    "alreadySubmitted": "Sua seleção já foi enviada.",
+    "empty": "Esta galeria ainda não tem fotos.",
+    "notFoundTitle": "Galeria indisponível",
+    "notFound": "O link não é válido ou a galeria expirou. Peça um novo link ao seu fotógrafo.",
+    "viewGallery": "Ver galeria",
+    "openPhoto": "Ver foto ampliada",
+    "close": "Fechar",
+    "prev": "Foto anterior",
+    "next": "Próxima foto",
+    "counter": "{{current}} de {{total}}",
+    "madeWith": "Feito com"
+  },
+  "download": {
+    "title": "Já tem seu código de download?",
+    "hint": "Quando seu fotógrafo confirmar o pagamento, você receberá um código para baixar suas fotos em alta resolução e sem marca d'água.",
+    "placeholder": "NAYRA-XXXX-XXXX",
+    "redeem": "Baixar minhas fotos",
+    "redeeming": "Validando…",
+    "ready": "Suas fotos estão prontas!",
+    "photo": "Foto {{number}}",
+    "zipAll": "Baixar tudo ({{count}} fotos, ZIP)",
+    "toggle": "Tenho um código",
+    "close": "Fechar",
+    "readyHint": "Toque em uma foto para salvá-la. Se os links vencerem, eles se renovam sozinhos.",
+    "errors": {
+      "invalid": "O código não é válido.",
+      "expired": "Este código venceu. Peça um novo ao seu fotógrafo.",
+      "exhausted": "Este código já atingiu o limite de usos.",
+      "revokedError": "Este código foi revogado.",
+      "tooManyAttempts": "Muitas tentativas. Aguarde alguns minutos e tente novamente.",
+      "needsSelection": "Seu cliente ainda não escolheu as favoritas: o código entregaria a galeria inteira, que passa do incluído no pacote.",
+      "noPhotos": "Não há fotos para baixar nesta galeria."
+    },
+    "label": "Código de download"
+  },
+  "errors": {
+    "generic": "Algo deu errado. Tente de novo.",
+    "offline": "Sem conexão. Verifique sua internet e tente de novo."
+  },
+  "menu": {
+    "open": "Abrir menu",
+    "title": "Sua galeria",
+    "close": "Fechar menu",
+    "protection": "Suas fotos estão protegidas: as capturas de tela estão bloqueadas neste app.",
+    "exit": "Sair da galeria",
+    "exitHint": "Você terá que digitar seu código novamente.",
+    "switch": "Suas galerias",
+    "switchHint": "Troque de galeria ou abra outra com o código."
+  },
+  "filter": {
+    "all": "Todas",
+    "favorites": "Favoritas"
+  },
+  "galleries": {
+    "title": "Suas galerias",
+    "subtitle": "Escolha qual você quer ver.",
+    "add": "Digitar outro código",
+    "open": "Abrir galeria",
+    "remove": "Remover do aparelho",
+    "removeTitle": "Remover esta galeria?",
+    "removeBody": "Ela será apagada deste aparelho. Você poderá abri-la de novo com o código.",
+    "cancel": "Cancelar",
+    "confirm": "Remover"
+  }
+}
