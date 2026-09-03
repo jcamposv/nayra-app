@@ -65,10 +65,12 @@ export function useCaptureProtection(onScreenshot?: () => void): void {
   // Red de seguridad: cubre iOS 12 y cualquier dispositivo donde el bloqueo
   // falle en silencio. Si llega a ocurrir, al menos se sabe y se avisa.
   //
-  // En Android 13 o anterior no llega a dispararse, porque detectar capturas
-  // ahí exige READ_MEDIA_IMAGES y ese permiso no se pide: Google Play lo
-  // trata como acceso sensible a la fototeca y lo rechaza a las apps que no
-  // gestionan fotos. No se pierde nada — en Android FLAG_SECURE ya bloquea
+  // En Android 13 no llega a dispararse, porque detectar capturas ahí exige
+  // READ_MEDIA_IMAGES y ese permiso va en `blockedPermissions`: Google Play
+  // lo trata como acceso sensible a la fototeca y lo rechaza a las apps que
+  // no gestionan fotos. Hay que bloquearlo explícitamente, no basta con no
+  // pedirlo — expo-screen-capture lo declara en su propio manifest y el
+  // merge lo reinyecta. No se pierde nada: en Android FLAG_SECURE ya bloquea
   // la captura de raíz, así que no hay nada que detectar.
   ScreenCapture.useScreenshotListener(() => {
     onScreenshot?.();
